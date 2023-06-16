@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSubmitForm()" #loanForm="ngForm">
+    <input type="text" placeholder="Borrow's Name" [(ngModel)]="borrowName" name="borrowName">
+    <br>
+    <input type="text" placeholder="Principal(Baht)" [(ngModel)]="principal" name="principal" (keydown)="onKeyDown($event)">
+    <br>
+    <input type="text" placeholder="Interest Rate(%)"[(ngModel)]="interestRate" name="interestRate">
+    <span> per </span>
+    <select [(ngModel)]="interestRateType" name="interestRateType">
+        <option value="annually">Annually</option>
+        <option value="monthly">Monthly</option>
+    </select>
+    <input type="text" placeholder="No. of Years" [(ngModel)]="loanDuration" name="loanDuration">
+    <br>
+    <button type="submit">Save</button>
+    <button type="button" (click)="cancelForm()">Cancel</button>
+</form>

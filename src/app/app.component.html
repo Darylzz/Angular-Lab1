@@ -1,0 +1,11 @@
+<div class="appContainer">
+    <nav>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a routerLink="/counter">Counter</a>
+        <a routerLink="/todo">Todo</a>
+        <a routerLink="/loan">Loan</a>
+    </nav>
+    <div class="outlet">
+        <router-outlet></router-outlet>
+    </div>
+</div>

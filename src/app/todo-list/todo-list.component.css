@@ -1,0 +1,38 @@
+.container {
+    text-align: center;
+}
+.todoInput {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.todoInput input {
+    padding: 8px 28px;
+}
+.todoInput button {
+    padding: 8px 28px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.todoContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.todoContent button {
+    padding: 12px 28px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.todoBox {
+    border: 1px solid #333;
+    height: 40px;
+    width: 250px;
+}
+
+.selected {
+    background-color: green;
+    text-decoration: line-through;
+}

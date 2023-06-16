@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="header">
+    <h1>Todo-List</h1>
+  </div>
+  <div class="todoInput">
+    <input type="text" placeholder="do something" [(ngModel)]="todo" (input)="handleErrorMaxLength()" (ngModelChange)="handleErrorMaxLength()">
+    <button (click)="addTodoBox()">Add</button>
+  </div>
+  <div class="todoContent" *ngFor="let box of boxes; let i = index">
+    <div class="todoBox" [class.selected]="i === selectedBoxIndex" (click)="selectBox(i)">
+      <p>{{ box }}</p>
+    </div>
+    <button (click)="clickDeleteTodo(i)">Del</button>
+  </div>
+</div>

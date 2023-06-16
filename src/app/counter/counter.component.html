@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="header">
+        <h1>Shared Counter</h1>
+    </div>
+    <div class="totalCounter">
+        <span>Total : {{ total }}</span>
+        <button (click)="addCounter()">Add Counter</button>
+    </div>
+    <div class="counter">
+        <div class="counterControl"
+        *ngFor="let box of boxes; let i = index">
+                <button (click)="incrementCount(i)">+</button>
+                <span>{{ box.count }}</span>
+                <button (click)="decrementCount(i)">-</button>
+                <button (click)="deleteCounter(i)">Delete</button>
+        </div>
+        <br>
+    </div>
+</div>

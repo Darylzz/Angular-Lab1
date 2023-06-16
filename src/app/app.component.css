@@ -1,0 +1,8 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+}

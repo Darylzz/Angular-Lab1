@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+.header {
+    text-align: center;
+}
+.loanContent {
+    display: flex;
+    justify-content: space-evenly;
+}
+.loanForm {
+    width: 30%;
+    height: 700px;
+}
+.loanList {
+    width: 30%;
+    height: 700px
+}
+.expectedIncome {
+    width: 30%;
+    height: 700px
+}
+.expectedIncome h2 {
+    font-size: 38px;
+    text-align: center;
+}

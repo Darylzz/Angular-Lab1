@@ -1,0 +1,10 @@
+<div *ngFor="let box of boxes; let i = index" class="loanListInfo">
+    <h3>{{ box.borrowName }}</h3>
+    <p>Principal: {{ box.principal | number }}</p>
+    <p>Interest Rate: {{ box.interestRate }}%</p>
+    <p>Interest Type: {{box.interestRateType}}</p>
+    <p>No. of Years: {{ box.loanDuration }}</p>
+    <p>Total Interest: {{box.totalInterest | number:'1.2-2'}}</p>
+    <button (click)="closeLoan(i)">Close loan</button>
+  </div>
+  
